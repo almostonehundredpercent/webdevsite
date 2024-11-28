@@ -1,0 +1,156 @@
+body{
+    background-color: #1d1c1c;
+}
+
+.div1{
+    color: whitesmoke;
+}
+/* Main content area */
+main {
+    padding: 20px;
+    color: whitesmoke;
+}
+/* Content Section */
+.featured-items .items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between each item */
+}
+
+.content-item {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between the image and text */
+    justify-content: space-between;
+}
+
+.item-box {
+    background-color: #242424; /* Light gray background */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners for the box */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for separation */
+    display: flex;
+    gap: 20px;
+    width: 100%; /* Ensure the box takes up full width of its parent */
+}
+.content-item.reverse {
+    flex-direction: row-reverse; /* Reverse the order for second item */
+}
+
+.image {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+}
+
+.text {
+    max-width: 300px; /* Limit the width of the text section */
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #575757;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align to the left */
+    gap: 10px;
+}
+
+.logo {
+    width: 70px; /* Adjust size as needed */
+    height: auto;
+}
+
+h1{
+    margin-left: 0;
+    color: whitesmoke;
+}
+p{
+    color: whitesmoke;
+    font-size: small;
+}
+footer{
+    color: whitesmoke;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #333;
+}
+
+nav ul li {
+    position: relative;
+    margin: 3px;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    background-color: #333;
+    border: 2px solid transparent;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border: 15px;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav ul li ul li {
+    width: 100%;
+}
+
+nav ul li ul li a {
+    padding: 10px 16px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+nav ul li a {
+    transition: background-color 0.3s ease;
+}
+nav ul li ul li a {
+    padding: 10px 20px;
+    border-bottom: 1px solid #555;
+}
+nav ul li ul li a:last-child {
+    border-bottom: none;
+}
+
+nav .disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
